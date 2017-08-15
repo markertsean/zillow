@@ -1,0 +1,21 @@
+Improve zillow algorithm
+
+mean abs error, = log( Zestimate ) - log( SalesPrice )
+
+Predict logerror for each time point
+ParcelId,201610,201611,201612,201710,201711,201712
+10754147,0.1234,1.2234,-1.3012,1.4012,0.8642,-3.1412
+10759547,0,0,0,0,0,0
+
+
+~3 million rows
+58 Columns, 60 with logerror and transaction date
+
+Only about 90k were purchased
+
+BuildingClassTypeID, TypeConstructionTypeID, ArchitecturalTypeID StoryTypeID
+All not really enough data to do anything with, over 99.5% missing
+
+AC type was interesting, combine some of the data
+
+
