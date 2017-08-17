@@ -19,3 +19,11 @@ All not really enough data to do anything with, over 99.5% missing
 AC type was interesting, combine some of the data
 
 
+Generated a variable between years sold, IE age of the house
+
+Pools broken up weird, just change to a has hottub variable, + sf of pool
+Garage break down to one variable
+For bathrooms, calculatedbathnbr exclusively
+Fireplaces, only use Only keep fireplace cnt
+
+sqft list will use pca analysis on calculatedfinishedsquarefeet, finishedsquarefeet12, lotsizesquarefeet
