@@ -34,3 +34,18 @@ sqft list will use finishedsquarefeet12, lotsizesquarefeet, completely uncorrela
 
 No surprise tax info is well correlated
 PCA for much of the tax info, look at tax deliquency much later
+
+decktypeid -> deck flag
+propertycountylandusecode -> drop, would be useful though
+numberofstories -> need to fill values, most are first story
+
+regionidneighborhood -> drop, all of these have way too many options and use codes
+regionidcity -> drop
+regionidzip -> drop
+
+buildingqualitytypeid -> break into categories, low quality (high number), med quality (mid number), high quality (low number), and unknown
+propertyzoningdesc -> drop
+
+unitcnt -> Break into 1, 2, many story categories
+roomcnt -> unknown (0), < 5, > 8, 5-8, categories
+
