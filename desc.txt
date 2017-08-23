@@ -13,6 +13,10 @@ ParcelId,201610,201611,201612,201710,201711,201712
 
 Only about 90k were purchased
 
+Of which, purchases build up towards end of week, max is on friday, with few on weekends
+May be very valuable for when purchased
+
+
 BuildingClassTypeID, TypeConstructionTypeID, ArchitecturalTypeID StoryTypeID
 All not really enough data to do anything with, over 99.5% missing
 
@@ -26,4 +30,7 @@ Garage break down to one variable
 For bathrooms, calculatedbathnbr exclusively
 Fireplaces, only use Only keep fireplace cnt
 
-sqft list will use pca analysis on calculatedfinishedsquarefeet, finishedsquarefeet12, lotsizesquarefeet
+sqft list will use finishedsquarefeet12, lotsizesquarefeet, completely uncorrelated, has a lot of data
+
+No surprise tax info is well correlated
+PCA for much of the tax info, look at tax deliquency much later
