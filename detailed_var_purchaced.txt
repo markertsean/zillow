@@ -1,0 +1,8 @@
+'logerror', 'transactiondate', 'airconditioningtypeid', 'pooltypeid10', 'poolsizesum', 'garagetotalsqft',
+'calculatedbathnbr', 'fireplacecnt', 'finishedsquarefeet12', 'lotsizesquarefeet', 'taxdelinquencyflag',
+'structuretaxvaluedollarcnt', 'taxvaluedollarcnt', 'landtaxvaluedollarcnt', 'taxamount', 'decktypeid',
+'numberofstories', 'buildingqualitytypeid', 'unitcnt', 'roomcnt', 'time_since_built', 'ordinal_date', 'day_of_week'
+
+
+Start by filling AC type, assume nan is none, so yes or none
+
