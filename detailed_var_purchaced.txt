@@ -4,5 +4,39 @@
 'numberofstories', 'buildingqualitytypeid', 'unitcnt', 'roomcnt', 'time_since_built', 'ordinal_date', 'day_of_week'
 
 
-Start by filling AC type, assume nan is none, so yes or none
+
+did one hot encoding, grouping, ect.
+
+
+Of things that we will need to massage the nans, we see:
+
+roomcnt                           0
+taxvaluedollarcnt                 1
+landtaxvaluedollarcnt             1
+taxamount                         6
+structuretaxvaluedollarcnt      380
+calculatedbathnbr              1182
+unitcnt                       31922
+numberofstories               69705
+
+Can use correlations to predict some values
+
+
+
+
+Fortunately, no overlap in all the tax values, so can use them to predict eachother
+
+       taxvaluedollarcnt  landtaxvaluedollarcnt  taxamount
+22541                NaN                    NaN       51.4
+       taxvaluedollarcnt  landtaxvaluedollarcnt  taxamount
+1305             42432.0                42432.0        NaN
+34947            68200.0                68200.0        NaN
+51225           179068.0                58912.0        NaN
+62405           224400.0               224400.0        NaN
+64316           104936.0                41227.0        NaN
+
+Plots show excellent correlation
+
+
+
 
