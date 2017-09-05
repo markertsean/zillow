@@ -39,11 +39,16 @@ Plots show excellent correlation
 
 
 To Predict and fill in landtaxvaluedollarcnt, taxvaluedollarcnt, perform
-regression using taxamount. Regression on the logs of the variables are
+regression using taxamount. Predict taxamount, structuretaxvaluedollarcnt
+from taxvaluedollarcnt. Regression on the logs of the variables are
 linear. The lines are not perfectly centered, but don't need to be as
 this trend is good and ballparking it is fine for our 1 data point. 
 Regression performed using scikit learn. Bottom patch exploration led
 to no new info
 
 
-
+calculatedbathnbr correlates pretty well will strucretaxvaluedollarcnt,
+do odd prediction. >70000/90000 are either 1, 2, or 3. Do simple linear 
+regression over this range, capping at either 1 or 3, and rounding to
+nearest 0.5 bath. This should be fine since only about 1% needs to be filled,
+and even if a bit off we are using this as a continuous variable.
