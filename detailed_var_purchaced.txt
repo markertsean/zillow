@@ -52,3 +52,10 @@ do odd prediction. >70000/90000 are either 1, 2, or 3. Do simple linear
 regression over this range, capping at either 1 or 3, and rounding to
 nearest 0.5 bath. This should be fine since only about 1% needs to be filled,
 and even if a bit off we are using this as a continuous variable.
+
+
+unit_sqft regressed by n_bath, log_str_tax.
+
+
+
+Predicting the number of rooms, n_room, dependant on n_bath and unit_sqft.
