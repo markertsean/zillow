@@ -356,6 +356,9 @@ def scale_data( inp_df ):
     scaled_df = inp_df.copy()
     scaled_df['age'] = scaled_df['time_since_built']
     
+    scaled_df['day_of_week_norm'] = ( scaled_df['day_of_week'] - 3. ) / 3
+
+    
     # Names of the dictionary
     dict_names = ['age','pool','unit','lot','garage']
     
@@ -410,7 +413,6 @@ def scale_data( inp_df ):
         scaled_df['tax_pca_1'] = foo[:,1]
 
         
-        
-    return scaled_df.drop( feat_names+tax_list+tax_scal+['time_since_built',
+    return scaled_df.drop( feat_names+tax_list+tax_scal+['time_since_built','day_of_week',
                             'log_pool_sqft','log_unit_sqft','log_lot_sqft','log_garage_sqft',
                             'n_bath','log_n_bath','n_rooms'], axis=1 )
